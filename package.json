@@ -1,0 +1,19 @@
+{
+  "name": "create-bangle-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "search": "espruino --verbose --list",
+    "connect": "espruino -d bangle"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-5",
+    "espruino": "^0.1.29",
+    "noble": "^1.9.1"
+  }
+}
