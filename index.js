@@ -2,7 +2,7 @@ const fs = require("fs")
 const esp = require("espruino")
 
 const sendToWatch = (cb) => {
-  const code = fs.readFileSync("watch.js", "utf8")
+  const code = fs.readFileSync("hello-world.js", "utf8")
   Espruino.callProcessor("transformForEspruino", code, function(code) {
     Espruino.Core.CodeWriter.writeToEspruino(code, function() {
       console.info("CODE UPLOADED:", new Date().toUTCString())
@@ -27,7 +27,7 @@ const start = () => {
     const BANGLE = BANGLES[0]
     Espruino.Core.Serial.open(BANGLE.path, info => {
       console.info("CONNECTED TO BANGLE:", BANGLE, info)
-      sendToWatch(() => fs.watchFile("watch.js", sendToWatch))
+      sendToWatch(() => fs.watchFile("hello-world.js", sendToWatch))
     })
   })
 }
