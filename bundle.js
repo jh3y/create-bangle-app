@@ -96,11 +96,8 @@ const uploadToDevice = app => {
 }
 
 const getUploadString = (name, content) =>
-  `\x10require('Storage').write(${JSON.stringify(name)},${
-    false //content.trim().endsWith(";")
-      ? content.slice(0, -1)
-      : JSON.stringify(content)
-  });`
+  `\x10require('Storage').write(${JSON.stringify(name)},${content})`
+
 const upload = () => {
   const files = APP.storage.map(({ name, url }) => {
     const content = fs.readFileSync(`${process.cwd()}/${url}`, "utf-8")
@@ -114,11 +111,11 @@ const upload = () => {
     const { content, name } = file
     // if it's the JSON file do something with it
     if (name.charAt(0) === "+") {
-      file.content = JSON.stringify({
+      file.content = {
         ...JSON.parse(content),
         files: files.map(({ name }) => name).join(",")
-      })
-    }
+      }
+    } else file.content = name.charAt(0) === '*' ? file.content : JSON.stringify(file.content)
     file.cmd = getUploadString(name, file.content)
   })
   console.info(files)

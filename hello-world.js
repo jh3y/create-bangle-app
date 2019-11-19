@@ -1,2 +1,2 @@
 g.clear()
-E.showMessage('HELLO WORLD v6!')
+E.showMessage('HELLO WORLD with Icon!')
