@@ -6,7 +6,6 @@ const sendToWatch = (cb) => {
   Espruino.callProcessor("transformForEspruino", code, function(code) {
     Espruino.Core.CodeWriter.writeToEspruino(code, function() {
       console.info("CODE UPLOADED:", new Date().toUTCString())
-      console.info(Espruino.Core.App)
       if (typeof cb === 'function') cb()
     })
   })

@@ -1,0 +1,27 @@
+{
+  "name": "create-bangle-app",
+  "version": "0.0.1",
+  "description": "command line tool for generating bangle.js app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jh3y/create-bangle-app.git"
+  },
+  "keywords": [
+    "bangle",
+    "javascript",
+    "watch",
+    "device",
+    "smart",
+    "iot"
+  ],
+  "author": "jh3y <jh3y@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jh3y/create-bangle-app/issues"
+  },
+  "homepage": "https://github.com/jh3y/create-bangle-app#readme"
+}

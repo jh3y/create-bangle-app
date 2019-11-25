@@ -1,20 +1,7 @@
 {
   "name": "create-bangle-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "search": "espruino --verbose --list",
-    "connect": "espruino -d bangle",
-    "upload": "node bundle.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@abandonware/noble": "^1.9.2-5",
-    "espruino": "^0.1.29",
-    "noble": "^1.9.1"
-  }
+  "version": "0.0.0",
+  "description": "a CLI tool to aid with local bangle.js development",
+  "author": "jh3y <jh3y@users.noreply.github.com> ",
+  "license": "MIT"
 }

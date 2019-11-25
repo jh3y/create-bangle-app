@@ -1,0 +1,29 @@
+{
+  "name": "bangle-scripts",
+  "version": "0.0.1",
+  "description": "command line tool for local bangle.js development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jh3y/create-bangle-app.git"
+  },
+  "keywords": [
+    "smart",
+    "watch",
+    "iot",
+    "javascript",
+    "bangle"
+  ],
+  "dependencies": {
+    "espruino": "^0.1.29"
+  },
+  "author": "jh3y <jh3y@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jh3y/create-bangle-app/issues"
+  },
+  "homepage": "https://github.com/jh3y/create-bangle-app#readme"
+}
