@@ -13,14 +13,10 @@
     "@oclif/plugin-help": "^2"
   },
   "devDependencies": {
-    "@oclif/test": "^1",
-    "chai": "^4",
     "eslint": "^5.13",
     "eslint-config-oclif": "^3.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "mocha": "^5",
-    "nyc": "^14",
     "prettier": "^1.19.1"
   },
   "engines": {
@@ -41,7 +37,6 @@
   },
   "repository": "jh3y/create-bangle-app",
   "scripts": {
-    "posttest": "eslint .",
-    "test": "nyc mocha --forbid-only \"test/**/*.test.js\""
+    "test": "eslint ."
   }
 }
