@@ -1,0 +1,15 @@
+{
+  "extends": ["oclif", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "globals": {
+    "Espruino": "writable",
+    "Module": "writable"
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

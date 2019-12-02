@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <title>bangle.js emulator</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' 'unsafe-inline';"
+    />
+    <link rel="stylesheet" href="./emulator.css" />
+  </head>
+  <body>
+    <main>
+      <!-- Emulator UI -->
+      <div id="gfxdiv" class='bangle'>
+        <div class="bangle__bezel">
+          <div class="bangle__glass">
+            <div class="bangle__screen">
+              <canvas id="gfxcanvas" width="240" height="240"></canvas>
+              <button id="BTN4" data-pin="11"></button>
+              <button id="BTN5" data-pin="16"></button>
+            </div>
+          </div>
+          <button id="BTN1" data-pin="24" class="bangle__button"></button>
+          <button id="BTN2" data-pin="22" class="bangle__button"></button>
+          <button id="BTN3" data-pin="23" class="bangle__button"></button>
+        </div>
+      </div>
+    </main>
+    <script>
+      window.$ = window.jQuery = require('jquery')
+    </script>
+    <script src="./EspruinoWebIDE/EspruinoTools/espruino.js"></script>
+    <script>
+      'use strict'
+      ;(function() {
+        Espruino.Core.Status = {
+          init: () => {},
+          setStatus: () => {},
+          hasProgress: () => {},
+          incrementProgress: () => {}
+        }
+      })()
+    </script>
+    <script src="./EspruinoWebIDE/EspruinoTools/core/serial.js"></script>
+    <script src="./EspruinoWebIDE/EspruinoTools/core/config.js"></script>
+    <script src="./EspruinoWebIDE/EspruinoTools/core/env.js"></script>
+    <script src="./EspruinoWebIDE/EspruinoTools/core/notifications.js"></script>
+    <script src="./EspruinoWebIDE/EspruinoTools/core/utils.js"></script>
+    <script src="./EspruinoWebIDE/EspruinoTools/core/codeWriter.js"></script>
+    <script src="./EspruinoWebIDE/js/plugins/emulator_espruino.js"></script>
+    <script>
+      require('./emulator.js')
+    </script>
+    <script>
+      require('./renderer.js')
+    </script>
+  </body>
+</html>

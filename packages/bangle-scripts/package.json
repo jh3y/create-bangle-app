@@ -1,0 +1,57 @@
+{
+  "name": "bangle-scripts",
+  "description": "CLI for devloping bangle.js apps",
+  "version": "0.0.5",
+  "author": "jh3y <jh3y@users.noreply.github.com>",
+  "bin": {
+    "bangle-scripts": "./bin/run"
+  },
+  "bugs": "https://github.com/jh3y/create-bangle-app/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2",
+    "electron": "^7.1.2",
+    "espruino": "^0.1.30",
+    "inquirer": "^7.0.0",
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "@oclif/dev-cli": "^1",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "globby": "^10",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "/bin",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json",
+    "/src"
+  ],
+  "homepage": "https://github.com/jh3y/create-bangle-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "commands": "./src/commands",
+    "bin": "bangle-scripts",
+    "plugins": [
+      "@oclif/plugin-help"
+    ]
+  },
+  "repository": "jh3y/create-bangle-app",
+  "scripts": {
+    "postpack": "rm -f oclif.manifest.json",
+    "prepack": "oclif-dev manifest && oclif-dev readme",
+    "test": "eslint .",
+    "version": "oclif-dev readme && git add README.md"
+  }
+}

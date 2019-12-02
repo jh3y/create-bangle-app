@@ -1,0 +1,42 @@
+{
+  "name": "create-bangle-app",
+  "description": "CLI tool for bootstrapping new bangle.js app",
+  "version": "0.0.7",
+  "author": "jh3y <jh3y@users.noreply.github.com>",
+  "bin": {
+    "create-bangle-app": "./bin/run"
+  },
+  "bugs": "https://github.com/jh3y/create-bangle-app/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2"
+  },
+  "devDependencies": {
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/jh3y/create-bangle-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "create-bangle-app"
+  },
+  "repository": "jh3y/create-bangle-app",
+  "scripts": {
+    "test": "eslint ."
+  }
+}

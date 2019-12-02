@@ -1,0 +1,12 @@
+{
+  "id": "hello-world",
+  "name": "Hello World!",
+  "icon": "hello-world.png",
+  "description": "A basic starter app for Bangle.js",
+  "tags": "hello, world, bangle.js",
+  "storage": [
+    { "name": "+hello-world", "url": "app.json", "content": "" },
+    { "name": "-hello-world", "url": "index.js" },
+    { "name": "*hello-world", "url": "icon.js", "evaluate": true }
+  ]
+}

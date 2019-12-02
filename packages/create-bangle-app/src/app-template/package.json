@@ -1,0 +1,14 @@
+{
+  "name": "hello-world-bangle-js",
+  "version": "0.0.0",
+  "description": "hello world in bangle.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "bangle-scripts start",
+    "emulate": "bangle-scripts start -e",
+    "upload": "bangle-scripts upload"
+  },
+  "devDependencies": {
+    "bangle-scripts": "^0.0.5"
+  }
+}

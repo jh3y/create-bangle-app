@@ -1,0 +1,3 @@
+[submodule "packages/bangle-scripts/src/emulator/EspruinoWebIDE"]
+	path = packages/bangle-scripts/src/emulator/EspruinoWebIDE
+	url = https://github.com/espruino/EspruinoWebIDE
