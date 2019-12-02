@@ -20,7 +20,6 @@ class StartCommand extends Command {
     // If we are emulating spawn an electron process pointing at the emulator
     // with the path of the bangle.js application
     if (flags.emulate) {
-      console.info(src)
       const emulator = spawn(electron, [
         `${__dirname}/../../emulator/main`,
         src

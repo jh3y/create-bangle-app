@@ -28,26 +28,34 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`bangle-scripts hello`](#bangle-scripts-hello)
+* [`bangle-scripts start`](#bangle-scripts-start)
+* [`bangle-scripts upload`](#bangle-scripts-upload)
 * [`bangle-scripts help [COMMAND]`](#bangle-scripts-help-command)
 
-## `bangle-scripts hello`
+## `bangle-scripts start`
 
-Describe the command here
+Starts the app development process.
 
 ```
 USAGE
-  $ bangle-scripts hello
+  $ bangle-scripts start
 
 OPTIONS
-  -n, --name=name  name to print
-
-DESCRIPTION
-  ...
-  Extra documentation goes here
+  -e, --emulate=emulate  run on electron emulator
 ```
 
-_See code: [src/commands/hello.js](https://github.com/jh3y/create-bangle-app/blob/v0.0.2/src/commands/hello.js)_
+_See code: [src/commands/start.js](https://github.com/jh3y/create-bangle-app/blob/v0.0.2/src/commands/hello.js)_
+
+## `bangle-scripts upload`
+
+Starts the upload to device process.
+
+```
+USAGE
+  $ bangle-scripts upload
+```
+
+_See code: [src/commands/upload.js](https://github.com/jh3y/create-bangle-app/blob/v0.0.2/src/commands/upload.js)_
 
 ## `bangle-scripts help [COMMAND]`
 

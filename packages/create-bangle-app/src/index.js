@@ -8,7 +8,6 @@ class CreateBangleAppCommand extends Command {
       // Read the app template and copy it over
       const APP_TEMPLATE_PATH = `${__dirname}/../app-template`
       const TEMPLATE_FILES = fs.readdirSync(APP_TEMPLATE_PATH)
-      // console.info(TEMPLATE_FILES)
       for (let i = 0; i < TEMPLATE_FILES.length; i++) {
         fs.copyFileSync(
           `${APP_TEMPLATE_PATH}/${TEMPLATE_FILES[i]}`,
