@@ -1,27 +1,47 @@
 {
   "name": "create-bangle-app",
-  "version": "0.0.1",
-  "description": "command line tool for generating bangle.js app",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jh3y/create-bangle-app.git"
-  },
-  "keywords": [
-    "bangle",
-    "javascript",
-    "watch",
-    "device",
-    "smart",
-    "iot"
-  ],
+  "description": "CLI tool for bootstrapping new bangle.js app",
+  "version": "0.0.2",
   "author": "jh3y <jh3y@users.noreply.github.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jh3y/create-bangle-app/issues"
+  "bin": {
+    "create-bangle-app": "./bin/run"
   },
-  "homepage": "https://github.com/jh3y/create-bangle-app#readme"
+  "bugs": "https://github.com/jh3y/create-bangle-app/issues",
+  "dependencies": {
+    "@oclif/command": "^1",
+    "@oclif/config": "^1",
+    "@oclif/plugin-help": "^2"
+  },
+  "devDependencies": {
+    "@oclif/test": "^1",
+    "chai": "^4",
+    "eslint": "^5.13",
+    "eslint-config-oclif": "^3.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "mocha": "^5",
+    "nyc": "^14",
+    "prettier": "^1.19.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "files": [
+    "/bin",
+    "/src"
+  ],
+  "homepage": "https://github.com/jh3y/create-bangle-app",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "src/index.js",
+  "oclif": {
+    "bin": "create-bangle-app"
+  },
+  "repository": "jh3y/create-bangle-app",
+  "scripts": {
+    "posttest": "eslint .",
+    "test": "nyc mocha --forbid-only \"test/**/*.test.js\""
+  }
 }

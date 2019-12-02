@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  background: linear-gradient(45deg, #c3c3c3, #5755d9);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.bangle__screen {
+  position: relative;
+}
+
+.bangle__glass {
+  --size: 350;
+  height: calc(var(--size) * 1px);
+  width: calc(var(--size) * 1px);
+  background: #111;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bangle__bezel {
+  --size: 420;
+  height: calc(var(--size) * 1px);
+  width: calc(var(--size) * 1px);
+  background: #333;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.bangle__screen button {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  z-index: 2;
+  background: blue;
+  appearance: none;
+  border: 0;
+  padding: 0;
+}
+
+.bangle__screen button:active {
+  opacity: 0.2;
+}
+
+.bangle__screen button:nth-of-type(1) {
+  left: 0;
+}
+
+.bangle__screen button:nth-of-type(2) {
+  right: 0;
+}
+
+.bangle__button {
+  position: absolute;
+  height: 44px;
+  width: 44px;
+  background: silver;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(calc(var(--rotation) * 1deg)) translate(230px, 0);
+}
+
+#BTN1 {
+  --rotation: -25;
+}
+#BTN2 {
+  --rotation: 0;
+}
+#BTN3 {
+  --rotation: 25;
+}
