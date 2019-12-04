@@ -1,7 +1,7 @@
 {
   "name": "bangle-scripts",
   "description": "CLI for devloping bangle.js apps",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "author": "jh3y <jh3y@users.noreply.github.com>",
   "bin": {
     "bangle-scripts": "./bin/run"

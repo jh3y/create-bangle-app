@@ -5,8 +5,8 @@ global.sharedObject = { src: process.argv[2] }
 
 function createWindow() {
   let win = new BrowserWindow({
-    width: 600,
-    height: 500,
+    width: 550,
+    height: 480,
     webPreferences: {
       nodeIntegration: true
     }

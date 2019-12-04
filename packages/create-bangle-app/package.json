@@ -1,7 +1,7 @@
 {
   "name": "create-bangle-app",
   "description": "CLI tool for bootstrapping new bangle.js app",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "jh3y <jh3y@users.noreply.github.com>",
   "bin": {
     "create-bangle-app": "./bin/run"

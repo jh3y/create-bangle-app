@@ -95,7 +95,7 @@ const jsTransmitPinEvent = pin => {
 }
 
 const transmit = pin => {
-  hwPinValue[pin] = hwPinValue ? 0 : 1 // inverted
+  hwPinValue[pin] = hwPinValue[pin] ? 0 : 1 // inverted
   jsTransmitPinEvent(pin)
 }
 
@@ -105,9 +105,11 @@ const jsInit = () => {
     if (e.target.tagName === 'BUTTON') {
       const pin = parseInt(e.target.dataset.pin, 10)
       transmit(pin)
-      const release = () => {
-        transmit(pin)
-        document.body.removeEventListener('mouseup', release)
+      const release = evt => {
+        if (e !== evt) {
+          transmit(pin)
+          document.body.removeEventListener('mouseup', release)
+        }
       }
       document.body.addEventListener('mouseup', release)
     }

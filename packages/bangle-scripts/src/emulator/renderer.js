@@ -16,6 +16,7 @@ const sendToWatch = cb => {
   )
   const code = fs.readFileSync(SRC, 'utf8')
   Espruino.callProcessor('transformForEspruino', code, function(code) {
+    Espruino.Core.Serial.setSlowWrite(false)
     Espruino.Core.CodeWriter.writeToEspruino(code, function() {
       ipc.send(
         'MESSAGE',

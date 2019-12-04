@@ -15,7 +15,7 @@ main {
 }
 
 .bangle__glass {
-  --size: 350;
+  --size: 320;
   height: calc(var(--size) * 1px);
   width: calc(var(--size) * 1px);
   background: #111;
@@ -23,10 +23,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .bangle__bezel {
-  --size: 420;
+  --size: 380;
   height: calc(var(--size) * 1px);
   width: calc(var(--size) * 1px);
   background: #333;
@@ -69,12 +70,12 @@ main {
   background: silver;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(calc(var(--rotation) * 1deg)) translate(230px, 0);
+  transform: translate(-50%, -50%) rotate(calc(var(--rotation) * 1deg)) translate(200px, 0);
   transform-origin: left center;
 }
 
 .bangle__button:active {
-  transform: translate(-50%, -50%) rotate(calc(var(--rotation) * 1deg)) translate(230px, 0) scaleX(0.5);
+  transform: translate(-50%, -50%) rotate(calc(var(--rotation) * 1deg)) translate(200px, 0) scaleX(0.5);
 }
 
 #BTN1 {

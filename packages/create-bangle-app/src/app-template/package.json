@@ -9,6 +9,6 @@
     "upload": "bangle-scripts upload"
   },
   "devDependencies": {
-    "bangle-scripts": "^0.0.5"
+    "bangle-scripts": "^0.0.6"
   }
 }
