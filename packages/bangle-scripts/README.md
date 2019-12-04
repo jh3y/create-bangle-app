@@ -1,7 +1,7 @@
 bangle-scripts
 ==============
 
-CLI for devloping bangle.js apps
+CLI for developing bangle.js apps
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/bangle-scripts.svg)](https://npmjs.org/package/bangle-scripts)
