@@ -19,7 +19,7 @@ $ npm install -g bangle-scripts
 $ bangle-scripts COMMAND
 running command...
 $ bangle-scripts (-v|--version|version)
-bangle-scripts/0.0.6 darwin-x64 node-v12.10.0
+bangle-scripts/0.0.7 darwin-x64 node-v12.10.0
 $ bangle-scripts --help [COMMAND]
 USAGE
   $ bangle-scripts COMMAND
@@ -62,7 +62,7 @@ OPTIONS
   -s, --src=src  path to bangle.js app source
 ```
 
-_See code: [src/commands/start.js](https://github.com/jh3y/create-bangle-app/blob/v0.0.6/src/commands/start.js)_
+_See code: [src/commands/start.js](https://github.com/jh3y/create-bangle-app/blob/v0.0.7/src/commands/start.js)_
 
 ## `bangle-scripts upload`
 
@@ -76,5 +76,5 @@ OPTIONS
   -c, --config=config  path to config file for app
 ```
 
-_See code: [src/commands/upload.js](https://github.com/jh3y/create-bangle-app/blob/v0.0.6/src/commands/upload.js)_
+_See code: [src/commands/upload.js](https://github.com/jh3y/create-bangle-app/blob/v0.0.7/src/commands/upload.js)_
 <!-- commandsstop -->
