@@ -11,7 +11,7 @@
     "@oclif/command": "^1",
     "@oclif/config": "^1",
     "@oclif/plugin-help": "^2",
-    "electron": "^7.1.2",
+    "electron": "^13.6.6",
     "espruino": "^0.1.30",
     "inquirer": "^7.0.0",
     "jquery": "^3.4.1"
